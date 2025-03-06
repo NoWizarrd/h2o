@@ -1,0 +1,10 @@
+@import url(fonts/stylesheet.css);
+
+* {
+  font-family: 'Proxima Nova Lt';
+  font-weight: 600;
+  background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
