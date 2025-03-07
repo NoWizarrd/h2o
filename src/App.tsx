@@ -1,12 +1,11 @@
 import styles from './App.module.scss'
+import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
 
   return (
     <main className={styles.main}>
-        <div className={styles.sidebar}>
-            side
-        </div>
+        <Sidebar/>
         <div className={styles.content}>
             main
         </div>

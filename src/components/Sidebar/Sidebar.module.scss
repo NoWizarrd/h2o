@@ -1,0 +1,42 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-bottom: 72px;
+  }
+  
+  .icon {
+    align-self: center;
+    &:nth-child(4) {
+      width: 31px;
+    }
+  
+    &:nth-child(5) {
+      width: 35px;
+    }
+  }
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+    &:hover {
+        cursor: pointer;
+        background-color: #A9E9E0BF;
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+    }
+
+    &:nth-child(7) {
+        background-color: #A9E9E0BF;
+        border-radius: 16px;
+      }
+}
