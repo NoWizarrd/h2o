@@ -12,7 +12,7 @@ const sidebarItems = [calendar, menu, ticket, people, coins, report, settings]
 
 export default function Sidebar() {
   return (
-    <div className={styles.sidebar}>
+    <aside className={styles.sidebar}>
         <img src={Logo} alt='Logo' className={styles.logo}/>
         {
             sidebarItems.map(icon=>(
@@ -21,6 +21,6 @@ export default function Sidebar() {
                 </div>
             ))
         }
-    </div>  
+    </aside>  
   )
 }

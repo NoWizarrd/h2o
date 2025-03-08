@@ -1,0 +1,105 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navButton {
+    background: #f0f0f0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 18px 0px #D2D1D180;
+    transition: box-shadow 0.3s ease-in;
+    &:hover {
+        box-shadow: 0px 4px 10px 0px #30888a9f;
+    }
+  }
+  
+  .profileButton {
+    @extend .navButton;
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    color: #555;
+    line-height: 24px;
+    border-bottom: 1.5px solid #D2D1D1;
+    
+    .active {
+        color: black;
+        border-bottom: 4px solid #54D3C2;
+    }
+
+    li {
+        cursor: pointer;
+        padding: 5px 10px;
+
+        &:hover {
+            @extend .active
+        }
+    }
+
+
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    margin-top: -5px;
+    align-items: center;
+      
+  .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #989FA3;
+  }
+
+  .name {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Proxima Nova Rg';
+  }
+}
+  
+  .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.accSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}

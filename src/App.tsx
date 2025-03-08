@@ -1,4 +1,5 @@
 import styles from './App.module.scss'
+import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <main className={styles.main}>
         <Sidebar/>
         <div className={styles.content}>
-            main
+            <Navbar/>
         </div>
     </main>
   )

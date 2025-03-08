@@ -8,6 +8,9 @@
   
   .logo {
     margin-bottom: 72px;
+    &:hover {
+        cursor: pointer;
+    }
   }
   
   .icon {
@@ -26,13 +29,12 @@
     justify-content: center;
     width: 64px;
     height: 64px;
+    border-radius: 16px;
     margin-bottom: 24px;
+    transition: background-color 0.3s ease-in-out;
     &:hover {
         cursor: pointer;
         background-color: #A9E9E0BF;
-        width: 64px;
-        height: 64px;
-        border-radius: 16px;
     }
 
     &:nth-child(7) {
