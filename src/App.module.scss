@@ -11,11 +11,17 @@
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 56px 40px;
     width: 1402px;
     height: 1376px;
     border-radius: 56px;
     border-bottom-left-radius: 0;
     background-color: #FFFFFF;
+}
+
+.dataSection {
+    display: flex;
+    justify-content: space-between;
 }

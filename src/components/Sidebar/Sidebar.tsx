@@ -16,7 +16,7 @@ export default function Sidebar() {
         <img src={Logo} alt='Logo' className={styles.logo}/>
         {
             sidebarItems.map(icon=>(
-                <div className={styles.iconWrapper}>
+                <div className={styles.iconWrapper} key={icon}>
                     <img src={icon} alt={icon} className={styles.icon}/>
                 </div>
             ))
