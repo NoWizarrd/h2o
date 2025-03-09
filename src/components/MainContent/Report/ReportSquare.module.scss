@@ -6,6 +6,10 @@
     width: 264px;
     height: 168px;
     border-radius: 24px;
+    color: #323F47;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .percentage {

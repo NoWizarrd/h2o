@@ -3,8 +3,11 @@ import Chart from './components/MainContent/Chart/Chart'
 import Report from './components/MainContent/Report/Report'
 import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
+import { calculateSumByDivision, generateData } from './utils/generateData'
 
 function App() {
+  const data = generateData(1000)
+  const dataSum = calculateSumByDivision(data.data)
 
   return (
     <main className={styles.main}>
@@ -13,7 +16,7 @@ function App() {
             <Navbar/>
             <div className={styles.dataSection}>
               <section>
-                <Report/>
+                <Report data={dataSum}/>
                 <Chart/>
               </section>
               <section>
