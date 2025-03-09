@@ -1,7 +1,7 @@
 import { DataSumType } from '../../../types/DataTypes'
-import styles from './Report.module.scss'
 import ReportSquare from './ReportSquare'
 import { faker } from '@faker-js/faker';
+import styles from './Report.module.scss'
 
 interface ReportProps {
   data: DataSumType; 
@@ -21,7 +21,7 @@ const randomPercentageMain = Math.round((randomPercentage1 + randomPercentage2) 
 export default function Report(props: ReportProps) {
   const {data} = props
   return (
-    <div>
+    <div className={styles.reportBlock}>
         <h1 className={styles.h1}>Сводный отчет</h1>
         <div className={styles.reportWrapper}>
             <ReportSquare main={true} data={data} percentage={randomPercentageMain}/>

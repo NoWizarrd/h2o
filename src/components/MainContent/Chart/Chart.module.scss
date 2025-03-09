@@ -1,0 +1,57 @@
+.contentWrapper {
+    position: relative; 
+    width: 100%; 
+    padding: 20px; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+} 
+
+.chart {
+    max-height: 400px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Proxima Nova Rg';
+}
+
+.buttonGroup {
+    display: flex;
+    height: 40px;
+    gap: 20px;
+}
+
+.activeBtn {
+    border: none;
+    padding: 10px;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 4px solid #54D3C2;
+    color: black;
+    font-family: 'Proxima Nova Rg';
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    color: #D2D1D1;
+    background: none;
+    font-size: 16px;
+    &:hover {
+        cursor: pointer;
+        border-bottom: 4px solid #54D3C2;
+        color: black;
+        font-family: 'Proxima Nova Rg';
+    }
+}

@@ -1,9 +1,9 @@
-import styles from './App.module.scss'
-import Chart from './components/MainContent/Chart/Chart'
+import ChartComponent from './components/MainContent/Chart/Chart'
 import Report from './components/MainContent/Report/Report'
 import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 import { calculateSumByDivision, generateData } from './utils/generateData'
+import styles from './App.module.scss'
 
 function App() {
   const data = generateData(1000)
@@ -17,7 +17,7 @@ function App() {
             <div className={styles.dataSection}>
               <section>
                 <Report data={dataSum}/>
-                <Chart/>
+                <ChartComponent data={data}/>
               </section>
               <section>
                 проблемные зоны
