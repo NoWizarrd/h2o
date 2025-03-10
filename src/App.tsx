@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 import { calculateSumByDivision, generateData } from './utils/generateData'
 import styles from './App.module.scss'
+import TroubleZones from './components/MainContent/TroubleZones/TroubleZones'
 
 function App() {
   const data = generateData(1000)
@@ -20,7 +21,7 @@ function App() {
                 <ChartComponent data={data}/>
               </section>
               <section>
-                проблемные зоны
+                <TroubleZones data={data}/>
               </section>
             </div>
         </div>
